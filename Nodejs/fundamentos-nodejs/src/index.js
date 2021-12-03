@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-
+app.use(express.json()); //pra avisar pro express que eu to usando json nas reqs. ai ele n fica dando o undefined
 /*
 GET - Buscar infos dentro do servidor
 POST - Inserir uma info no servidor
